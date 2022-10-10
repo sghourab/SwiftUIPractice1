@@ -24,9 +24,11 @@ struct ContentView: View {
                     AccountView()
                 }
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
 
             TabBar()
+        }
+        .safeAreaInset(edge: .bottom) {
+            Color.clear.frame(height: 44)
         }
     }
 }

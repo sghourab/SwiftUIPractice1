@@ -18,6 +18,14 @@
 		007AC1D228E3741A00F1A8E5 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AC1D128E3741A00F1A8E5 /* TabBar.swift */; };
 		007AC1D428E39F9800F1A8E5 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AC1D328E39F9800F1A8E5 /* Tab.swift */; };
 		007AC1D628E4B8D700F1A8E5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AC1D528E4B8D700F1A8E5 /* HomeView.swift */; };
+		00CF92A728EDD19B002CE4A8 /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF92A628EDD19B002CE4A8 /* FeaturedItem.swift */; };
+		00CF92A928EDD3A0002CE4A8 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF92A828EDD3A0002CE4A8 /* NavigationBar.swift */; };
+		00CF92AB28EDE82D002CE4A8 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF92AA28EDE82D002CE4A8 /* PreferenceKeys.swift */; };
+		00CF92AD28EDFB64002CE4A8 /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF92AC28EDFB64002CE4A8 /* AnimatableFontModifier.swift */; };
+		00CF92AF28EE006A002CE4A8 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF92AE28EE006A002CE4A8 /* Course.swift */; };
+		00CF92B128EF4944002CE4A8 /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF92B028EF4944002CE4A8 /* MatchedView.swift */; };
+		00CF92B328F09272002CE4A8 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF92B228F09272002CE4A8 /* CourseItem.swift */; };
+		00CF92B528F093C7002CE4A8 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF92B428F093C7002CE4A8 /* CourseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +41,14 @@
 		007AC1D128E3741A00F1A8E5 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		007AC1D328E39F9800F1A8E5 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		007AC1D528E4B8D700F1A8E5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		00CF92A628EDD19B002CE4A8 /* FeaturedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItem.swift; sourceTree = "<group>"; };
+		00CF92A828EDD3A0002CE4A8 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		00CF92AA28EDE82D002CE4A8 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
+		00CF92AC28EDFB64002CE4A8 /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
+		00CF92AE28EE006A002CE4A8 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		00CF92B028EF4944002CE4A8 /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
+		00CF92B228F09272002CE4A8 /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
+		00CF92B428F093C7002CE4A8 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +106,7 @@
 			children = (
 				007AC1C728E2089C00F1A8E5 /* ContentView.swift */,
 				007AC1D128E3741A00F1A8E5 /* TabBar.swift */,
+				00CF92A828EDD3A0002CE4A8 /* NavigationBar.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -99,6 +116,8 @@
 			children = (
 				007AC1D528E4B8D700F1A8E5 /* HomeView.swift */,
 				007AC1CB28E2A3A100F1A8E5 /* AccountView.swift */,
+				00CF92B028EF4944002CE4A8 /* MatchedView.swift */,
+				00CF92B428F093C7002CE4A8 /* CourseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,6 +127,8 @@
 			children = (
 				007AC1CD28E34EBC00F1A8E5 /* HexagonView.swift */,
 				007AC1CF28E35F6D00F1A8E5 /* BlobView.swift */,
+				00CF92A628EDD19B002CE4A8 /* FeaturedItem.swift */,
+				00CF92B228F09272002CE4A8 /* CourseItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -116,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				007AC1D328E39F9800F1A8E5 /* Tab.swift */,
+				00CF92AA28EDE82D002CE4A8 /* PreferenceKeys.swift */,
+				00CF92AE28EE006A002CE4A8 /* Course.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				007AC1C928E2273B00F1A8E5 /* Styles.swift */,
+				00CF92AC28EDFB64002CE4A8 /* AnimatableFontModifier.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -220,14 +244,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				007AC1D628E4B8D700F1A8E5 /* HomeView.swift in Sources */,
+				00CF92B128EF4944002CE4A8 /* MatchedView.swift in Sources */,
+				00CF92B528F093C7002CE4A8 /* CourseView.swift in Sources */,
 				007AC1C828E2089C00F1A8E5 /* ContentView.swift in Sources */,
 				007AC1BA28E1F7E600F1A8E5 /* SwiftUIPractice1App.swift in Sources */,
 				007AC1D228E3741A00F1A8E5 /* TabBar.swift in Sources */,
 				007AC1CA28E2273B00F1A8E5 /* Styles.swift in Sources */,
+				00CF92A928EDD3A0002CE4A8 /* NavigationBar.swift in Sources */,
 				007AC1CC28E2A3A100F1A8E5 /* AccountView.swift in Sources */,
 				007AC1D428E39F9800F1A8E5 /* Tab.swift in Sources */,
+				00CF92AF28EE006A002CE4A8 /* Course.swift in Sources */,
 				007AC1CE28E34EBC00F1A8E5 /* HexagonView.swift in Sources */,
+				00CF92B328F09272002CE4A8 /* CourseItem.swift in Sources */,
+				00CF92A728EDD19B002CE4A8 /* FeaturedItem.swift in Sources */,
+				00CF92AB28EDE82D002CE4A8 /* PreferenceKeys.swift in Sources */,
 				007AC1D028E35F6D00F1A8E5 /* BlobView.swift in Sources */,
+				00CF92AD28EDFB64002CE4A8 /* AnimatableFontModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
