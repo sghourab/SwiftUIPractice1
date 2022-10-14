@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("selectedTab") var selectedTab: Tab = .home
+    @AppStorage("showModal") var showModal  = false
+    @EnvironmentObject var model: Model
 
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -26,8 +28,15 @@ struct ContentView: View {
             }
 
             TabBar()
+                .offset(y: model.showDetail ? 200 : 0)
+            if showModal {
+                ZStack {
+                 ModalView()
+                }
+                .zIndex(1)
+            }
         }
-        .safeAreaInset(edge: .bottom) {
+        .safeAreaInset(edge: .bottom, spacing: 0) {
             Color.clear.frame(height: 44)
         }
     }
@@ -40,6 +49,6 @@ struct FirstView_Previews: PreviewProvider {
             ContentView()
                 .preferredColorScheme(.dark)
                 .previewDevice("iPhone 13 mini")
-        }
+        }.environmentObject(Model())
     }
 }
