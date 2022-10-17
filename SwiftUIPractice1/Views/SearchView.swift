@@ -59,6 +59,7 @@ struct SearchView: View {
         }
     }
     var content: some View {
+        
         ForEach(Array(courses.enumerated()), id: \.offset) { index, course in
             if course.title.contains(text) || text == "" {
                 if index != 0 {

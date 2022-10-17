@@ -38,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00585EC428FB3F5C00BD3D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		007AC1B628E1F7E600F1A8E5 /* SwiftUIPractice1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPractice1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		007AC1B928E1F7E600F1A8E5 /* SwiftUIPractice1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPractice1App.swift; sourceTree = "<group>"; };
 		007AC1BD28E1F7E700F1A8E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		007AC1B828E1F7E600F1A8E5 /* SwiftUIPractice1 */ = {
 			isa = PBXGroup;
 			children = (
+				00585EC428FB3F5C00BD3D6C /* Info.plist */,
 				007AC1B928E1F7E600F1A8E5 /* SwiftUIPractice1App.swift */,
 				007AC1D728E4BD0700F1A8E5 /* Navigation */,
 				007AC1D828E4BD3700F1A8E5 /* Views */,
@@ -434,6 +436,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIPractice1/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIPractice1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -462,6 +465,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIPractice1/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIPractice1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -58,7 +58,6 @@ struct HomeView: View {
             })
             .overlay(
                 NavigationBar(title: "Featured", hasScrolled: $hasScrolled)
-                //   .opacity(hasScrolled ? 1 : 0)
             )
             if show {
                  detail
@@ -78,7 +77,6 @@ struct HomeView: View {
 
     var scrollDetection: some View {
         GeometryReader { proxy in
-            //    Text("\(proxy.frame(in: .named("scroll")).minY)")
             Color.clear.preference(key: ScrollPreferenceKey.self, value: proxy.frame(in: .named("scroll")).minY)
         }
         .frame(height: 0)

@@ -189,6 +189,8 @@ struct CourseView: View {
     }
 
     func fadeIn() {
+        func fadeIn() {
+
         withAnimation(.easeOut.delay(0.3)) {
             appear[0] = true
         }
@@ -198,6 +200,8 @@ struct CourseView: View {
         withAnimation(.easeOut.delay(0.5)) {
             appear[2] = true
         }
+    
+    }
     }
 
     func fadeOut() {
