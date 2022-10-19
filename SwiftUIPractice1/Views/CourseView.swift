@@ -27,7 +27,7 @@ struct CourseView: View {
             }
             .coordinateSpace(name: "scroll")
             .onAppear { model.showDetail = true }
-            .onDisappear { model.showDetail = false}
+            .onDisappear { model.showDetail = false }
             .background(Color("Background"))
             .mask(RoundedRectangle(cornerRadius: viewState.width / 3, style: .continuous))
             .shadow(color: .black.opacity(0.3), radius: 30, x: 0, y: 10)
@@ -161,7 +161,7 @@ struct CourseView: View {
         .offset(y: 250)
         .padding(20)
     }
-    
+
     var drag: some Gesture {
         DragGesture(minimumDistance: 30, coordinateSpace: .local)
             .onChanged { value in
@@ -170,7 +170,6 @@ struct CourseView: View {
                     withAnimation {
                         viewState = value.translation
                     }
-                    
                 }
                 if viewState.width > 120 {
                     close()
@@ -184,24 +183,17 @@ struct CourseView: View {
                         viewState = .zero
                     }
                 }
-               
             }
     }
 
     func fadeIn() {
-        func fadeIn() {
-
-        withAnimation(.easeOut.delay(0.3)) {
-            appear[0] = true
+        var delay = 0.3
+        for i in 0 ..< appear.count {
+            withAnimation(.easeOut.delay(delay)) {
+                appear[i] = true
+                delay += 0.1
+            }
         }
-        withAnimation(.easeOut.delay(0.4)) {
-            appear[1] = true
-        }
-        withAnimation(.easeOut.delay(0.5)) {
-            appear[2] = true
-        }
-    
-    }
     }
 
     func fadeOut() {
@@ -219,7 +211,7 @@ struct CourseView: View {
         withAnimation {
             viewState = .zero
         }
-        
+
         isDraggable = false
     }
 }

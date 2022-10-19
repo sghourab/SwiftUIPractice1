@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00585ECD28FF03F300BD3D6C /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00585ECC28FF03F300BD3D6C /* AvatarView.swift */; };
+		00585ECF28FF217C00BD3D6C /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00585ECE28FF217C00BD3D6C /* Address.swift */; };
+		00585ED128FF25B700BD3D6C /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00585ED028FF25B700BD3D6C /* Coin.swift */; };
+		00585ED528FFA9EE00BD3D6C /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00585ED428FFA9EE00BD3D6C /* CircularView.swift */; };
+		00585ED728FFAD7500BD3D6C /* CourseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00585ED628FFAD7500BD3D6C /* CourseSection.swift */; };
 		007AC1BA28E1F7E600F1A8E5 /* SwiftUIPractice1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AC1B928E1F7E600F1A8E5 /* SwiftUIPractice1App.swift */; };
 		007AC1BE28E1F7E700F1A8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007AC1BD28E1F7E700F1A8E5 /* Assets.xcassets */; };
 		007AC1C128E1F7E700F1A8E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007AC1C028E1F7E700F1A8E5 /* Preview Assets.xcassets */; };
@@ -39,6 +44,11 @@
 
 /* Begin PBXFileReference section */
 		00585EC428FB3F5C00BD3D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		00585ECC28FF03F300BD3D6C /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		00585ECE28FF217C00BD3D6C /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		00585ED028FF25B700BD3D6C /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		00585ED428FFA9EE00BD3D6C /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
+		00585ED628FFAD7500BD3D6C /* CourseSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSection.swift; sourceTree = "<group>"; };
 		007AC1B628E1F7E600F1A8E5 /* SwiftUIPractice1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPractice1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		007AC1B928E1F7E600F1A8E5 /* SwiftUIPractice1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPractice1App.swift; sourceTree = "<group>"; };
 		007AC1BD28E1F7E700F1A8E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +113,7 @@
 				00585EC428FB3F5C00BD3D6C /* Info.plist */,
 				007AC1B928E1F7E600F1A8E5 /* SwiftUIPractice1App.swift */,
 				007AC1D728E4BD0700F1A8E5 /* Navigation */,
+				00CF931128F88DB1002CE4A8 /* Model */,
 				007AC1D828E4BD3700F1A8E5 /* Views */,
 				007AC1D928E4BD7700F1A8E5 /* Components */,
 				007AC1DB28E4BDCE00F1A8E5 /* Styles */,
@@ -133,7 +144,6 @@
 		007AC1D828E4BD3700F1A8E5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				00CF931128F88DB1002CE4A8 /* Model */,
 				007AC1D528E4B8D700F1A8E5 /* HomeView.swift */,
 				007AC1CB28E2A3A100F1A8E5 /* AccountView.swift */,
 				00CF92B028EF4944002CE4A8 /* MatchedView.swift */,
@@ -148,9 +158,11 @@
 			isa = PBXGroup;
 			children = (
 				007AC1CD28E34EBC00F1A8E5 /* HexagonView.swift */,
+				00585ED428FFA9EE00BD3D6C /* CircularView.swift */,
 				007AC1CF28E35F6D00F1A8E5 /* BlobView.swift */,
 				00CF92A628EDD19B002CE4A8 /* FeaturedItem.swift */,
 				00CF92B228F09272002CE4A8 /* CourseItem.swift */,
+				00585ECC28FF03F300BD3D6C /* AvatarView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -185,6 +197,9 @@
 				00CF931428F88DB1002CE4A8 /* PreferenceKeys.swift */,
 				00CF931528F88DB1002CE4A8 /* Course.swift */,
 				00CF931628F88DB1002CE4A8 /* Tab.swift */,
+				00585ECE28FF217C00BD3D6C /* Address.swift */,
+				00585ED028FF25B700BD3D6C /* Coin.swift */,
+				00585ED628FFAD7500BD3D6C /* CourseSection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -286,13 +301,18 @@
 				00CF92B528F093C7002CE4A8 /* CourseView.swift in Sources */,
 				007AC1C828E2089C00F1A8E5 /* ContentView.swift in Sources */,
 				007AC1BA28E1F7E600F1A8E5 /* SwiftUIPractice1App.swift in Sources */,
+				00585ED528FFA9EE00BD3D6C /* CircularView.swift in Sources */,
+				00585ECF28FF217C00BD3D6C /* Address.swift in Sources */,
 				007AC1D228E3741A00F1A8E5 /* TabBar.swift in Sources */,
+				00585ECD28FF03F300BD3D6C /* AvatarView.swift in Sources */,
 				00CF931B28F88DB1002CE4A8 /* Tab.swift in Sources */,
 				007AC1CA28E2273B00F1A8E5 /* Styles.swift in Sources */,
 				00CF92A928EDD3A0002CE4A8 /* NavigationBar.swift in Sources */,
 				00CF92C428F7B5A1002CE4A8 /* AngularButtonStyle.swift in Sources */,
 				00CF931928F88DB1002CE4A8 /* PreferenceKeys.swift in Sources */,
 				007AC1CC28E2A3A100F1A8E5 /* AccountView.swift in Sources */,
+				00585ED728FFAD7500BD3D6C /* CourseSection.swift in Sources */,
+				00585ED128FF25B700BD3D6C /* Coin.swift in Sources */,
 				00CF92CA28F865E1002CE4A8 /* SignInView.swift in Sources */,
 				007AC1CE28E34EBC00F1A8E5 /* HexagonView.swift in Sources */,
 				00CF92B328F09272002CE4A8 /* CourseItem.swift in Sources */,
